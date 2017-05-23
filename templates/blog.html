@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Homepage | Blog</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> <!--Povezava do bootstrapa v mapi assets -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-        <div class="navbar navbar-default navbar-static-top ">
-            <div class="container">
-                  <div class="navbar-header">
-                        <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse"> <!--ta + naslednje 4 vrstice so menu tipka za telefone-->
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                  </div>
+{% extends "base.html" %}
 
-                  <div class ="collapse navbar-collapse navHeaderCollapse">
-                        <ul class="nav navbar-nav"> <!--napisi v headerju postavljeni sredinsko-->
-                              <li><a href="/">O MENI</a></li>
-                              <li><a href="moji-projekti" class="nav-margin">MOJI PROJEKTI</a></li>
-                              <li class="active"><a href="blog"class="nav-margin">BLOG</a></li>
-                              <li><a href="kontakt" class="nav-margin">KONTAKT</a></li>
-                        </ul>
-                  </div>
+{% block title %}O meni{% endblock title %}
 
-              </div>
-
-        </div> <!--close navbar default-->
+{% block content %}
 
         <div class="text-size">
             <div class="col-md-6">
@@ -44,6 +16,8 @@
             </div>
 
         </div>
+{% endblock content %}
+
 
 
 </body>
